@@ -1,10 +1,17 @@
 .container1 {
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 50px);
+
+   
+    
+    
 }
 
 .square {
     border: 1px solid black;
+    box-sizing: border-box;
     height: 50px;
-    width: auto;
+    width: 50px;
+   
+    
 }
