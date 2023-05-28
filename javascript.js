@@ -1,7 +1,7 @@
 /*Etch-A-Sketch*/
 
 const container1 = document.querySelector('.container1');
-const button = document.querySelector('button');
+const button = document.querySelector('.button');
 
 let gridSize = 0;
 
@@ -56,4 +56,14 @@ button.addEventListener('click', function() {
     e.target.style.backgroundColor = "black";
   }
 
- 
+  
+  
+  function reloadPage()
+  {
+  location.reload();
+  }
+  
+  const button1 = document.querySelector('.button1');
+  button1.addEventListener('click', function() {
+    reloadPage();
+  })
