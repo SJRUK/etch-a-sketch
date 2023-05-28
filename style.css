@@ -1,17 +1,44 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(130, 130, 241); /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(230, 230, 255),rgb(130, 130, 241));
+}
+
+.heading {
+    margin-bottom: 0px;
+}
+
 .container1 {
     display: grid;
-    grid-template-columns: repeat(16, 50px);
-
-   
-    
-    
+    grid-template-columns: repeat(16, 2fr);
+    height: 650px;
+    width: 650px;
+  
 }
 
 .square {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     box-sizing: border-box;
-    height: 50px;
-    width: 50px;
+    /*height: 50px;
+    width: 50px;*/
    
+}
+
+.button {
+    background-color: rgb(230, 230, 255);
+    border-radius: 12px;
+    margin: 20px;
+    padding: 10px;
     
 }
+
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
